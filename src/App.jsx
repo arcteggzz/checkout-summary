@@ -1,16 +1,16 @@
 import { useState } from "react";
+import CartInfo from "./components/CartInfo";
+import CartEstimate from "./components/CartEstimate";
+import PromoCode from "./components/PromoCode";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Our sample H1 text</h1>
-      <div className="card">
-        <button>Apply PromoCode</button>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CartInfo />
+      <CartEstimate />
+      <PromoCode />
     </div>
   );
 }
