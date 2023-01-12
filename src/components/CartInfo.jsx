@@ -9,7 +9,13 @@ function CartInfo() {
         <p className="subtotal-bold">$100.00</p>
       </div>
       <div className="subtotal">
-        <p className="left-text underline">Pickup Savings</p>
+        <p className="left-text underline tooltip">
+          Pickup Savings{" "}
+          <span class="tooltiptext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque gravida
+          </span>
+        </p>
         <p className="subtotal-bold red">$-3.09</p>
       </div>
       <div className="subtotal">
