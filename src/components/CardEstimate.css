@@ -1,0 +1,68 @@
+.estimate {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 44px 0;
+  border-bottom: 1px rgb(202, 194, 194) solid;
+}
+
+.total {
+  display: flex;
+  padding: 0 0 0 0;
+  margin: 0;
+}
+
+.total h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.h1-total {
+  width: 200px;
+}
+
+.blue-text {
+  color: blue;
+  cursor: pointer;
+  margin: 0;
+}
+
+.item {
+  padding: 20px;
+  border: 1px gray solid;
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  column-gap: 24px;
+}
+
+.item img {
+  height: 120px;
+  width: auto;
+}
+
+.item p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.details {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.price {
+  margin: 0;
+  display: flex;
+  column-gap: 60px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.slash {
+  text-decoration: line-through;
+  color: rgb(28, 27, 27);
+}
