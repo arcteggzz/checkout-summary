@@ -40,9 +40,9 @@
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 240px;
+  width: 160%;
   bottom: 100%;
-  left: 50%;
+  left: 20%;
   margin-left: -120px;
   background-color: rgba(0, 0, 0, 0.774);
   color: #fff;

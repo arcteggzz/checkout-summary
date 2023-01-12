@@ -33,6 +33,7 @@
   background-color: rgb(220, 220, 220);
   display: flex;
   column-gap: 24px;
+  transition: all 1s ease-out;
 }
 
 .item img {

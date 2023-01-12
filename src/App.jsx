@@ -6,10 +6,16 @@ import PromoCode from "./components/PromoCode";
 import "./App.css";
 
 function App() {
+  const cartSummary = {
+    subtotal: 120.03,
+    pickupSavings: 3.09,
+    taxEstimate: 8.05,
+  };
+
   return (
     <div className="App">
-      <CartInfo />
-      <CartEstimate />
+      <CartInfo cartSummary={cartSummary} />
+      <CartEstimate cartSummary={cartSummary} />
       <PromoCode />
     </div>
   );

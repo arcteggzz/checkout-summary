@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import outfit from "../assets/outfit.jpg";
 import "./CardEstimate.css";
+import { useSelector } from "react-redux";
 
-function CartEstimate() {
+function CartEstimate({ cartSummary }) {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);
+  const [total, setTotal] = useState(0);
+  const totalobj = useSelector((state) => state.detailsReducer);
+
+  useEffect(() => {
+    setTotal(totalobj.estTotal);
+  }, [totalobj.estTotal]);
 
   return (
     <div className="estimate">
       <div className="total">
         <h1 className="h1-total">Est. total</h1>
-        <h1>$104.56</h1>
+        <h1>{`$${total}`}</h1>
       </div>
       {!isDetailsOpen && (
         <p className="blue-text" onClick={() => setIsDetailsOpen(true)}>
